@@ -2,53 +2,107 @@
 *{
     font-family: 'Poppins', sans-serif;
     padding: 0;
-    margin: 0;
+    margin: 0!;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+.bg-dark{
+    background-color: var(--bg-color)!important;
+}
+
+
 
     :root{
-        --main-color:#06a2d1;
-        --main-hover-color:#06728d;
+        --main-color:#1C82AD;
+        --main-hover-color:#03C988;
         --secondry-color:#ff00d4;
         --bg-color:#0f0f0f;
         --shadow-color:rgba(255, 255, 255, 0.123);
-        --text-color:#fff;
+        --text-color:rgb(226, 224, 224);
         --sc-hover:rgba(255, 255, 255, 0.5);
         --shadow-color-2:rgba(6, 162, 209, 0.11);
+        --header-color:rgba(0, 0, 0, 0.11);
+    }
+    .navbar-brand img{
+        transition: 7ms ease-in-out;
+    }
+    .navbar-brand img:hover{
+        transform: rotate(-20deg)  scale(1.1);
+    }
+    .navbar:hover{
+        color: var(--bg-color);
+    }
+
+
+    .collapsing{
+        border: none;
+    }
+
+    .bg-ma{
+       background-color: var(--header-color);
     }
     
-
 
     body{
         background-color: var(--bg-color);
     }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--bg-color);
-    width: 100%;
-    position: fixed;
-    z-index: 999;
-    padding: 8px 180px;
-    height: 10vh;
-    flex-wrap: wrap;
-}
+ .navbar{
+    margin-top: 0px!important;
+ }
 
-.light{
-    --bg-color:#fff;
+ .toggel-btn{
+    background-color: var(--main-hover-color);
+    width: 7em!important;
+    border-radius: 20px;
+ }
+ .toggel-btn:hover{
+    background-color: var(--main-hover-color);
+ }
+
+ .nav-link{
+    color: var(--text-color);
+ }
+
+  .active{
+    color: var(--main-hover-color)!important;
+ }
+
+.nav-link:hover,
+.nav-link:active {
+   color: var(--main-hover-color)!important ;
+ }
+ .navbar-toggler{
+    color: #fff;
+    font-size: 3em;
+
+ }
+ #icon{
+    width: 1rem;
+    color: white!important;
+ }
+ .navbar-toggler:focus{
+    box-shadow: none;
+ }
+ .navbar .navbar-toggler[aria-expanded="true"]{
+    border-color: var(--main-hover-color)!important ;
+ }
+
+.light-theme{
+    --bg-color:rgb(223, 221, 221);
     --shadow-color:rgba(0, 0, 0, 0.178);
     --text-color:#000;
     --sc-hover:rgba(0, 0, 0, 0.5);
+    --header-color:rgba(247, 243, 243, 0.11);
 }
     
 
 
 
    
-
+.toggel{
+    cursor: pointer;
+}
 
 
 
